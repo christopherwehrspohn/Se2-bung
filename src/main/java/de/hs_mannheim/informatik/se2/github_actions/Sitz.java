@@ -3,15 +3,24 @@ package de.hs_mannheim.informatik.se2.github_actions;
 import java.util.ArrayList;
 
 public class Sitz {
-	//Test
+	
 	private String position;
 
 	public Sitz(String position) {
 		this.position = position;
 	}
 
+public boolean sitzEinstellen(String sitzeinstellung) {
+	
+	if (getSitztemperatur().contains(sitzeinstellung) || getSitzprofil().contains(sitzeinstellung)) {
+		return true;
+	} else {
+		return false;
+	}
+}
+	
 	public ArrayList<String> getSitztemperatur() {
-		ArrayList<String> Sitzeinstellungen = new ArrayList<String>();
+		ArrayList<String> sitzeinstellungen = new ArrayList<String>();
 		
 		String sitzheizung1 = "Sitzheizung1";
 		String sitzheizung2 = "Sitzheizung2";
@@ -21,29 +30,29 @@ public class Sitz {
 		String sitzkuehlung2 = "Sitzkühlung2";
 		String sitzkuehlung3 = "Sitzkühlung3";
 		
-		Sitzeinstellungen.add(sitzheizung1);
-		Sitzeinstellungen.add(sitzheizung2);
-		Sitzeinstellungen.add(sitzheizung3);
-		Sitzeinstellungen.add(sitzkuehlung1);
-		Sitzeinstellungen.add(sitzkuehlung2);
-		Sitzeinstellungen.add(sitzkuehlung3);
+		sitzeinstellungen.add(sitzheizung1);
+		sitzeinstellungen.add(sitzheizung2);
+		sitzeinstellungen.add(sitzheizung3);
+		sitzeinstellungen.add(sitzkuehlung1);
+		sitzeinstellungen.add(sitzkuehlung2);
+		sitzeinstellungen.add(sitzkuehlung3);
 		
-		return Sitzeinstellungen;
+		return sitzeinstellungen;
 		
 	}
 	
 	public ArrayList<String> getSitzprofil() {
-		ArrayList<String> Sitzeinstellungen = new ArrayList<String>();
+		ArrayList<String> sitzeinstellungen = new ArrayList<String>();
 		
 		String profil1 = "Profil1";
 		String profil2 = "Profil2";
 		String profil3 = "Profil3";
 		
-		Sitzeinstellungen.add(profil1);
-		Sitzeinstellungen.add(profil2);
-		Sitzeinstellungen.add(profil3);
+		sitzeinstellungen.add(profil1);
+		sitzeinstellungen.add(profil2);
+		sitzeinstellungen.add(profil3);
 		
-		return Sitzeinstellungen;
+		return sitzeinstellungen;
 		
 	}
 	
