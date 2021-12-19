@@ -3,14 +3,14 @@ package de.hs_mannheim.informatik.se2.github_actions;
 import java.util.ArrayList;
 
 public class Sitz {
-
+	//Test
 	private String position;
 
 	public Sitz(String position) {
 		this.position = position;
 	}
 
-	public ArrayList<String> getSitzeinstellungen() {
+	public ArrayList<String> getSitztemperatur() {
 		ArrayList<String> Sitzeinstellungen = new ArrayList<String>();
 		
 		String sitzheizung1 = "Sitzheizung1";
@@ -27,6 +27,21 @@ public class Sitz {
 		Sitzeinstellungen.add(sitzkuehlung1);
 		Sitzeinstellungen.add(sitzkuehlung2);
 		Sitzeinstellungen.add(sitzkuehlung3);
+		
+		return Sitzeinstellungen;
+		
+	}
+	
+	public ArrayList<String> getSitzprofil() {
+		ArrayList<String> Sitzeinstellungen = new ArrayList<String>();
+		
+		String profil1 = "Profil1";
+		String profil2 = "Profil2";
+		String profil3 = "Profil3";
+		
+		Sitzeinstellungen.add(profil1);
+		Sitzeinstellungen.add(profil2);
+		Sitzeinstellungen.add(profil3);
 		
 		return Sitzeinstellungen;
 		
