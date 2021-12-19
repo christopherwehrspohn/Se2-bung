@@ -2,35 +2,25 @@ package de.hs_mannheim.informatik.se2.github_actions;
 
 import java.util.ArrayList;
 
-
 public class Song {
-	private String title;
 
-	public Song(String title) {
-		this.title = title;
+	private String song;
+
+	public Song() {
+		this.song = song;
 	}
 
-	public String toString() {
-		return "SONG: " + title;
-	}
+	public String Song() {
+		
+			String[] Song = new String[0];
+			String Songtitle = Song[0];
+			Song[0] = "Songtitel1";
 
-	static void Song() {
-		{
-			ArrayList<Song> songs = new ArrayList<Song>();
-
-			songs.add(new Song("Songtitel1"));
-			songs.add(new Song("Songtitel2"));
-
-			for (Song s : songs) {
-				System.out.println(s);
-
-			}
+			return Songtitle;
 		}
-	}
+	
 
 	public static void main(String[] args) {
-		Song();
+
 	}
-
 }
-
