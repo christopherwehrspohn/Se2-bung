@@ -1,13 +1,17 @@
 package de.hs_mannheim.informatik.se2.github_actions.test;
 
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Test;
 
+import de.hs_mannheim.informatik.se2.github_actions.Navigation;
+
 public class JUnitTests {
 	   @Test
-	    public void shouldAnswerWithTrue()
+	    public void naviTesten()
 	    {
-	        assertTrue( true );
+		   	Navigation navi = new Navigation();
+			boolean ergebnis = navi.routeBerechnen("Desloch");
+			assertEquals(true, ergebnis);
 	    }
 }
