@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 public class Sitz {
 
+	
 	private String position;
 
 	public Sitz(String position) {
