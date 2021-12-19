@@ -1,3 +1,4 @@
+
 package de.hs_mannheim.informatik.se2.github_actions.test;
 
 public class SongTest{
@@ -20,3 +21,4 @@ public class SongTest{
 //			var = song.Song();
 //			assertStringEquals("Songtitle", var);
 		}
+
